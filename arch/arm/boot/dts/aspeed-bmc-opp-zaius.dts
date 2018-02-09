@@ -76,6 +76,30 @@
                         gpios = <&gpio ASPEED_GPIO(E, 7) GPIO_ACTIVE_LOW>;
                         linux,code = <ASPEED_GPIO(E, 7)>;
                 };
+
+		fan0-tach-present{
+                        label = "fan0-tach-present";
+                        gpios = <&gpio ASPEED_GPIO(O, 0) GPIO_ACTIVE_LOW>;
+                        linux,code = <ASPEED_GPIO(O, 0)>;
+                };
+
+		fan1-tach-present{
+                        label = "fan1-tach-present";
+                        gpios = <&gpio ASPEED_GPIO(O, 1) GPIO_ACTIVE_LOW>;
+                        linux,code = <ASPEED_GPIO(O, 1)>;
+                };
+
+		fan2-tach-present{
+                        label = "fan2-tach-present";
+                        gpios = <&gpio ASPEED_GPIO(O, 2) GPIO_ACTIVE_LOW>;
+                        linux,code = <ASPEED_GPIO(O, 2)>;
+                };
+
+		fan3-tach-present{
+                        label = "fan3-tach-present";
+                        gpios = <&gpio ASPEED_GPIO(O, 3) GPIO_ACTIVE_LOW>;
+                        linux,code = <ASPEED_GPIO(O, 3)>;
+                };
 	};
 
 	leds {
