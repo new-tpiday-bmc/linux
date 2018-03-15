@@ -162,21 +162,25 @@
 
 	fan@0 {
 		reg = <0x00>;
+                cooling-levels = /bits/ 8 <50>;
 		aspeed,fan-tach-ch = /bits/ 8 <0x00>;
 	};
 
 	fan@1 {
 		reg = <0x01>;
+                cooling-levels = /bits/ 8 <50>;
 		aspeed,fan-tach-ch = /bits/ 8 <0x01>;
 	};
 
 	fan@2 {
 		reg = <0x02>;
+                cooling-levels = /bits/ 8 <50>;
 		aspeed,fan-tach-ch = /bits/ 8 <0x02>;
 	};
 
 	fan@3 {
 		reg = <0x03>;
+                cooling-levels = /bits/ 8 <50>;
 		aspeed,fan-tach-ch = /bits/ 8 <0x03>;
 	};
 };
