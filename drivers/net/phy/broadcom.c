@@ -423,6 +423,7 @@ static int bcm54612e_config_aneg(struct phy_device *phydev)
 		reg &= ~MII_BCM54XX_AUXCTL_MISC_RXD_RXC_SKEW;
 		/* Clear shadow selector field */
 		reg &= ~MII_BCM54XX_AUXCTL_SHDWSEL_MASK;
+		printk(KERN_INFO "AUXCTL = %X\n", reg);
 		bcm54xx_auxctl_write(phydev, MII_BCM54XX_AUXCTL_SHDWSEL_MISC,
 				     MII_BCM54XX_AUXCTL_MISC_WREN | reg);
 	}
